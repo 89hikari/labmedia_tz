@@ -1,9 +1,9 @@
 .container {
-    width: calc(100% - 276px);
-    max-width: 1644px;
+    width: calc(100% - 10em);
+    max-width: calc(1920px - 10em);
     background-color: #fff;
     height: 100%;
     margin: auto;
     align-items: center;
-    padding: 60px 138px 60px 138px;
+    padding: 60px 5em 60px 5em;
 }
