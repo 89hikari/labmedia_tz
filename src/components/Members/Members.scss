@@ -28,22 +28,44 @@
         }
     }
     &__container{
-        margin: 0;
+        margin: 36px 0 0 0;
         padding: 0;
+        max-height: 710px;
         background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: hidden;
         .member{
             background-color: #fff;
-            max-width: 320px;
+            width: 300px;
             height: 190px;
+            margin-bottom: 90px;
             display: flex;
             flex-direction: row;
+            margin-right: 70px;
             &__avatar{
                 background-color: #fff;
                 width: 75px;
                 height: 75px;
                 margin-right: 17px;
+                &--none{
+                    background-color: #fff;
+                    width: 75px;
+                    height: 75px;
+                    margin-right: 17px;
+                    line-height: 75px;
+                    color: #999999;
+                    font-family: "DINProBold";
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-align: center;
+                    border: 1px solid #cdcdcd;
+                    border-radius: 50%;
+                }
             }
             &__info{
+                width: 200px;
                 background-color: #fff;
                 &__name{
                     border-bottom: 1px solid #cccccc;
@@ -53,6 +75,10 @@
                     line-height: 19px;
                     font-family: "DINProBold";
                     font-weight: bold;
+                    &__container{
+                        background-color: #fff;
+                        margin-bottom: 10px;
+                    }
                 }
                 &__role, &__acieves, &__rating{
                     margin-top: 10px;
@@ -62,8 +88,11 @@
                     font-weight: normal;
                     color: #666666;
                 }
+                &__role{
+                    margin: 0;
+                }
                 &__rating{
-                    margin-bottom: 13px;
+                    margin-bottom: 18px;
                 }
                 &__tag{
                     display: inline;
@@ -77,9 +106,6 @@
                     cursor: pointer;
                 }
                 &__action{
-                    display: block;
-                    width: 90px;
-                    max-width: 147px;
                     text-align: center;
                     font-family: "MyriadProRegular";
                     font-size: 12px;
