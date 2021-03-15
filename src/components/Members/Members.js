@@ -39,7 +39,7 @@ function Members() {
             
             <div className="members__actions">
                 <span className="members__actions--become">Стать участником</span>
-                <span className="members__actions--showAll" onClick={() => $('.members__container').css('max-height', '100%') && $('.members__actions').css('margin-top', '0')}>Показать всех</span>
+                <span className="members__actions--showAll" onClick={() => $('.members__container').css('max-height', 'none') && $('.members__actions').css('margin-top', '0') && $('.members__actions--showAll').css('display', 'none')}>Показать всех</span>
             </div>
         </div>
     )
