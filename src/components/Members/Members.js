@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import Member from './Member';
 import './Members.scss'
 import avatar1 from './../../assets/avatar1.png';
@@ -6,6 +8,7 @@ import avatar2 from './../../assets/avatar2.png';
 import avatar3 from './../../assets/avatar3.png';
 
 function Members() {
+
     return (
         <div className="members">
             <h1 className="members__title">Участники</h1>
@@ -32,9 +35,12 @@ function Members() {
                 <Member avatar={avatar2} name="Дмитрий Белоусов" role={["Модератор"]} achieves="Кандидат экономическиъ наук, профессор" rating="110" action="Пригласить к общению"/>
                 <Member avatar={avatar2} name="Дмитрий Белоусов" role={["Модератор"]} achieves="Кандидат экономическиъ наук, профессор" rating="110" action="Пригласить к общению"/>
                 <Member avatar={avatar2} name="Дмитрий Белоусов" role={["Модератор"]} achieves="Кандидат экономическиъ наук, профессор" rating="110" action="Пригласить к общению"/>
-                <Member avatar={avatar2} name="Дмитрий Белоусов" role={["Модератор"]} achieves="Кандидат экономическиъ наук, профессор" rating="110" action="Пригласить к общению"/>
             </div>
-            <div className="members__become"></div>
+            
+            <div className="members__actions">
+                <span className="members__actions--become">Стать участником</span>
+                <span className="members__actions--showAll" onClick={() => $('.members__container').css('max-height', '100%') && $('.members__actions').css('margin-top', '0')}>Показать всех</span>
+            </div>
         </div>
     )
 }
