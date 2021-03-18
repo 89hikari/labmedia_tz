@@ -3,6 +3,7 @@ import Header from './Header/Header'
 import WhiteContainer from './WhiteContainer/WhiteContainer'
 import '../styles/App.css';
 import Requests from "./Requests/Requests";
+import Footer from "./Footer/Footer";
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
                 <Header />
                 <WhiteContainer />
                 <Requests />
+                <Footer />
             </div>
         );
     }
