@@ -20,22 +20,18 @@ function Info() {
     return (
         <div className="requests__info">
             <div className="requests__info__container">
-                <table className="requests__table">
-                    <thead className="requests__table__head">
-                        <tr className="requests__info__titles">
-                            <th className="requests__info__title" scope="col">Подразделение</th>
-                            <th className="requests__info__title" scope="col">Функция</th>
-                            <th className="requests__info__title" scope="col">Инициатор заявки</th>
-                            <th className="requests__info__title" scope="col">Должность</th>
-                            <th className="requests__info__title" scope="col">Дата заявки</th>
-                            <th className="requests__info__title" scope="col">Программа обучения</th>
-                            <th className="requests__info__title" scope="col">Стоимость</th>
-                            <th className="requests__info__title" scope="col">Статус заявки</th>
-                        </tr>
-                    </thead>
-                    <tbody className="requests__table__body">
+                <div className="requests__info__titles">
+                    <div className="requests__info__titles__title" scope="col">Подразделение</div>
+                    <div className="requests__info__titles__title" scope="col">Функция</div>
+                    <div className="requests__info__titles__title" scope="col">Инициатор заявки</div>
+                    <div className="requests__info__titles__title" scope="col">Должность</div>
+                    <div className="requests__info__titles__title" scope="col">Дата заявки</div>
+                    <div className="requests__info__titles__title" scope="col">Программа обучения</div>
+                    <div className="requests__info__titles__title" scope="col">Стоимость</div>
+                    <div className="requests__info__titles__title" scope="col">Статус заявки</div>
+                </div>
                     {   
-                        obj.slice((page - 1) * itemsPerPage, page * itemsPerPage).map(item => {
+                       obj.slice((page - 1) * itemsPerPage, page * itemsPerPage).map(item => {
                             return(
                                 <Request name={item.title}
                                 func={item.func}
@@ -46,12 +42,9 @@ function Info() {
                                 cost={item.cost}
                                 status={item.status} />
                             )
-                        })
+                        }) 
                     }
-                    </tbody>
-                </table>
-            </div>
-            <Pagination 
+                    <Pagination 
                     page={page} 
                     defaultPage={1} 
                     count={noOfPages}
@@ -59,6 +52,7 @@ function Info() {
                     hidePrevButton 
                     hideNextButton
                      />
+            </div>
         </div>
     )
 }

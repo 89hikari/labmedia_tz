@@ -3,16 +3,16 @@ import './Requests.scss'
 
 function Request(props) {
     return (
-        <tr id="row" className="requests__table__elements">
-            <td className="requests__info__element">{props.name}</td>
-            <td className="requests__info__element">{props.func}</td>
-            <td className="requests__info__element">{props.initiator}</td>
-            <td className="requests__info__element">{props.position}</td>
-            <td className="requests__info__element">{props.date}</td>
-            <td className="requests__info__element">{props.program}</td>
-            <td className="requests__info__element">{props.cost}</td>
-            <td className="requests__info__element">{props.status}</td>
-        </tr>
+        <div className="requests__info__elements">
+            <div className="requests__info__elements__element">{props.name}</div>
+            <div className="requests__info__elements__element">{props.func}</div>
+            <div className="requests__info__elements__element">{props.initiator}</div>
+            <div className="requests__info__elements__element">{props.position}</div>
+            <div className="requests__info__elements__element">{props.date}</div>
+            <div className="requests__info__elements__element">{props.program}</div>
+            <div className="requests__info__elements__element">{props.cost}</div>
+            <div className="requests__info__elements__element">{props.status}</div>
+        </div>
     )
 }
 

@@ -12,7 +12,7 @@ function WhiteContainer() {
             <MainContent vrMan={vrMan}/>
             <Members />
             <Courses />
-            <Requests />
+            
         </div>
     )
 }

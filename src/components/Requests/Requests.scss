@@ -2,16 +2,12 @@
     padding-top: 60px;
     align-items: center;
     background-color: #fff;
-    width: 100%;
-    tr:hover {
-        color: #fff;
-        background-color: rgb(255, 239, 239);
-    }
-    
-    tr:hover td {
-        background-color: transparent;
-    }
+    border-bottom: 2px solid #f2f2f2;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     &__title{
+        margin-left: 80px;
         padding-bottom: 69px;
         background-color: #fff;
         font-family: 'DINProRegular';
@@ -21,6 +17,8 @@
     }
     &__types{
         background-color: #fff;
+        margin-left: 80px;
+        margin-bottom: 40px;
         &__info, &__history{
             padding: 0;
             display: inline;
@@ -51,56 +49,59 @@
             cursor: pointer;
         }
     }
-
-    &__table{
-        position: relative;
-        border-collapse: collapse;
-        background-color: rgb(211, 179, 179);
-        
-        font-family: 'DINProRegular';
-        font-weight: normal;
-        font-size: 12px;
-        min-width: 1340px;
-        &__head{
-            
-            background-color: #fff;
-            border-bottom: 1px solid #cccccc;
-        }
-        .requests__table__body{
-            background-color: #fff;
-        }
-        .requests__table__elements{
-            height: 60px;
-        }
-        .requests__info__element{
-            color: #444444;
-            vertical-align: text-top;
-            padding: 0;
-            background-color: #fff;
-            padding-right: 10px;
-            text-align: left;
-        }
-    }
     
     &__info{
+        background-color: #fff;
+        &__titles{
+            background-color: #fff;
+            display: flex;
+            padding-left: 80px;
+            &__title{
+                width: 167.5px;
+                min-width: 120px;
+                font-family: 'DINProRegular';
+                font-weight: normal;
+                color: #7a7a7a;
+                text-align: left;
+                font-size: 12px;
+                background-color: #fff;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #cccccc;
+            }
+        }
+        &__elements{
+            background-color: #fff;
+            display: flex;
+            padding-left: 80px;
+            &__element{
+                width: 167.5px;
+                min-width: 120px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                font-family: 'DINProRegular';
+                font-weight: normal;
+                color: #111111;
+                font-size: 12px;
+                background-color: #fff;
+                text-align: left;
+            }
+        }
+        &__elements:hover{
+            background-color: rgb(245, 224, 224);
+        }
+        &__elements:hover &__elements__element{
+            background-color: rgb(245, 224, 224);
+        }
         &__container{
             background-color: #fff;
-            overflow-x: auto;
-        }
-        background-color: #fff;
-        .requests__info__titles{
-            background-color: #fff;
-        }
-        .requests__info__title{
-            color: #8f8f8f;
-            background-color: #fff;
-            text-align: left;
-            width: 90px;
-            padding: 10px 0 10px 0;
+            overflow-y: auto;
         }
 
         .MuiPagination-root{
+            margin-left: 80px;
+            margin-top: 40px;
             background-color: #fff;
+            margin-bottom: 120px;
         }
         .MuiPagination-ul{
             background-color: #fff;

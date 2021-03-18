@@ -10,6 +10,7 @@ class App extends Component {
             <div>
                 <Header />
                 <WhiteContainer />
+                <Requests />
             </div>
         );
     }
