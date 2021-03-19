@@ -16,7 +16,7 @@ class Requests extends React.Component {
         }
     }
     
-      toggleContent = (event) => {
+    toggleContent = (event) => {
         const currentState = this.state.active;
         event.preventDefault();
         this.setState({
