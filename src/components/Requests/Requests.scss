@@ -2,23 +2,32 @@
     padding-top: 60px;
     align-items: center;
     background-color: #fff;
-    border-bottom: 2px solid #f2f2f2;
-    height: 100%;
     max-width: 1920px;
     margin: 0 auto;
     &__title{
-        margin-left: 80px;
+        margin-left: 7.1875vw;
         padding-bottom: 69px;
         background-color: #fff;
         font-family: 'DINProRegular';
         font-weight: normal;
         color: #000;
         font-size: 40px;
+        @media screen and (max-width: 810px) {
+            font-family: 'DINProBold';
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 30px;
+            margin-left: 19px;
+        }
     }
     &__types{
         background-color: #fff;
-        margin-left: 80px;
+        margin-left: 7.1875vw;
         margin-bottom: 40px;
+        @media screen and (max-width: 810px) {
+            margin-left: 19px;
+            margin-bottom: 30px;
+        }
         &__info, &__history{
             padding: 0;
             display: inline;
@@ -30,6 +39,10 @@
             border: none;
             font-size: 14.01px;
             border-bottom: 1px dotted #fe9979;
+            @media screen and (max-width: 810px) {
+                margin-top: 9px;
+                margin-bottom: 9px;
+            }
             &--active{
                 color: #fd5520;
                 padding: 10px;
@@ -55,10 +68,14 @@
         &__titles{
             background-color: #fff;
             display: flex;
-            padding-left: 80px;
+            padding-left: 7.1875vw;
+            @media screen and (max-width: 810px) {
+                padding-left: 19px;
+            }
             &__title{
-                width: 167.5px;
-                min-width: 120px;
+                width: 8.203125vw;
+                padding-right: 0.52vw;
+                min-width: 115px;
                 font-family: 'DINProRegular';
                 font-weight: normal;
                 color: #7a7a7a;
@@ -72,12 +89,16 @@
         &__elements{
             background-color: #fff;
             display: flex;
-            padding-left: 80px;
+            padding-left: 7.1875vw;
+            @media screen and (max-width: 810px) {
+                padding-left: 19px;
+            }
             &__element{
-                width: 167.5px;
-                min-width: 120px;
+                width: 8.203125vw;
+                min-width: 115px;
                 padding-top: 20px;
                 padding-bottom: 10px;
+                padding-right: 0.52vw;
                 font-family: 'DINProRegular';
                 font-weight: normal;
                 color: #111111;
@@ -98,10 +119,13 @@
         }
 
         .MuiPagination-root{
-            margin-left: 80px;
+            margin-left: 7.1875vw;
+            @media screen and (max-width: 810px) {
+                margin-left: 19px;
+            }
             margin-top: 40px;
             background-color: #fff;
-            margin-bottom: 120px;
+            padding-bottom: 120px;
         }
         .MuiPagination-ul{
             background-color: #fff;

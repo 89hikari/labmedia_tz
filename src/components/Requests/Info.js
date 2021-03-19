@@ -44,7 +44,8 @@ function Info() {
                             )
                         }) 
                     }
-                    <Pagination 
+            </div>
+            <Pagination 
                     page={page} 
                     defaultPage={1} 
                     count={noOfPages}
@@ -52,7 +53,6 @@ function Info() {
                     hidePrevButton 
                     hideNextButton
                      />
-            </div>
         </div>
     )
 }

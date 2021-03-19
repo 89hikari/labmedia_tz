@@ -1,5 +1,4 @@
 .members{
-    margin-top: 100px;
     padding: 0;
     background-color: #fff;
     &__title{
@@ -8,13 +7,23 @@
         font-size: 40px;
         font-weight: normal;
         margin-bottom: 50px;
+        @media screen and (max-width: 810px) {
+            font-family: 'DINProBold';
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
     }
     &__sort{
         background-color: #fff;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        @media screen and (max-width: 810px) {
+            flex-direction: column;
+        }
         &__element{
+            margin-top: 14px;
             margin-right: 35px;
             background-color: #fff;
             color: #fd5520;
@@ -22,6 +31,12 @@
             font-family: "DINProRegular";
             font-size: 14px;
             font-weight: normal;
+            @media screen and (max-width: 810px) {
+                border-bottom: none;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                text-decoration-color: #feaa8f;
+            }
         }
         &__element:hover{
             cursor: pointer;
@@ -43,12 +58,20 @@
             margin-bottom: 90px;
             display: flex;
             flex-direction: row;
-            margin-right: 70px;
+            margin-right: 3.6458vw;
+            @media screen and (max-width: 810px) {
+                display: block;
+            }
             &__avatar{
                 background-color: #fff;
                 width: 75px;
                 height: 75px;
                 margin-right: 17px;
+                @media screen and (max-width: 810px) {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                }
                 &--none{
                     background-color: #fff;
                     width: 75px;
@@ -62,9 +85,18 @@
                     text-align: center;
                     border: 1px solid #cdcdcd;
                     border-radius: 50%;
+                    @media screen and (max-width: 810px) {
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
                 }
             }
             &__info{
+                @media screen and (max-width: 810px) {
+                    width: 100%;
+                }
                 width: 200px;
                 background-color: #fff;
                 &__name{
@@ -90,6 +122,10 @@
                 }
                 &__role{
                     margin: 0;
+                    @media screen and (max-width: 810px) {
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
                 }
                 &__rating{
                     margin-bottom: 18px;
@@ -127,6 +163,9 @@
     &__actions {
         background-color: #fff;
         margin-top: 70px;
+        @media screen and (max-width: 810px) {
+            margin-top: 40px;
+        }
         display: flex;
         flex-direction: column;
         &--become{

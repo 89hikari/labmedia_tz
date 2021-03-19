@@ -3,13 +3,19 @@
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 55px;
+    border-top: 2px solid #f2f2f2;
+    position: relative;
+    @media screen and (max-width: 810px) {
+        height: 88px;
+        padding-top: 0;
+    }
     &__container{
         max-width: 1500px;
         background-color: #fff;
         font-family: 'DINProRegular';
         font-weight: normal;
-        padding-left: 4.17vw;
+        padding: 0 7.1875vw 0 7.1875vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -18,23 +24,31 @@
         background-color: #fff;
         padding-right: 10px;
         &__element--large, &__element--small{
+            display: inline-block;
             color: #666666;
             background-color: #fff;
-            text-decoration: underline;
-            text-decoration-color: #7a7a7a;
+            border-bottom: 1px solid #cccccc;
         }
         &__element--small{
-            padding-top: 16px;
+            margin-top: 10px;
             font-size: 10px;
-            
         }
         &__element--large{
-            margin-top: 25px;
             font-size: 16px;
-            
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        &__element--small:hover, &__element--large:hover{
+            cursor: pointer;
         }
         
     }
+    @media screen and (max-width: 810px) {
+        &__container {
+          display: none;
+        }
+    }
+    
     &__credits{
         background-color: #fff;
         font-family: 'DINProRegular';
@@ -42,5 +56,12 @@
         font-size: 12px;
         color: #666666;
         padding: 80px 0 10px 4.17vw;
+        @media screen and (max-width: 810px) {
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.625em;
+            left: 20px;
+        }
     }
 }

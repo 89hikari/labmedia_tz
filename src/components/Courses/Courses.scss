@@ -2,12 +2,17 @@
     background-color: #fff;
     margin-top: 90px;
     &__title{
-        display: inline-block;
         background-color: #fff;
         font-family: "DINProRegular";
         font-size: 40px;
         font-weight: normal;
         margin-bottom: 60px;
+        @media screen and (max-width: 810px) {
+            font-family: 'DINProBold';
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
     }
     &__list{
         max-width: 779px;
@@ -19,7 +24,7 @@
             box-shadow: 0px 5px 8px 4px rgba(13, 31, 45, 0.16);
             background-color: #fff;
             border-radius: 4px;
-            padding-bottom: 40px;
+            padding-bottom: 32px;
             padding-right: 40px;
             position: relative;
             margin-bottom: 20px;
@@ -27,7 +32,7 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                background-color: #fff;
+                background-color: transparent;
             }
             &--star{
                 background-color: #fd5520;
@@ -64,9 +69,17 @@
                 font-size: 12px;
                 font-weight: normal;
                 color: #666666;
+                margin-bottom: 5px;
+                @media screen and (max-width: 810px) {
+                    border: none;
+                    text-decoration: underline;
+                    text-decoration-style: solid;
+                    text-decoration-color: #cccccc;
+                }
                 &--container{
                     background-color: #fff;
                     margin: 8px 0 0 30px;
+                    
                 }
             }
             &--info{
@@ -75,11 +88,22 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                @media screen and (max-width: 810px) {
+                    flex-direction: column;
+                }
                 &--grade, &--passed, &--liked {
                     margin-right: 22px;
                     background-color: #fff;
                     font-family: "DINProRegular";
                     color: #000;
+                    @media screen and (max-width: 810px) {
+                        margin-bottom: 15px;
+                    }
+                }
+                &--liked{
+                    @media screen and (max-width: 810px) {
+                        margin-bottom: 0;
+                    }
                 }
                 
                 &--liked--container{
@@ -88,7 +112,9 @@
                 }
                 &--liked--heart{
                     margin-right: 7px;
+                    margin-top: 3px;
                     background-color: #fff;
+                    height: 16px;
                 }
             }
         }

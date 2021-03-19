@@ -1,9 +1,14 @@
 .container {
-    width: calc(100% - 10em);
-    max-width: calc(1920px - 10em);
+    width: calc(100% - 14.375vw);
+    max-width: calc(1920px - 14.375vw);
     background-color: #fff;
     height: 100%;
     margin: auto;
     align-items: center;
-    padding: 60px 5em 60px 5em;
+    padding: 60px 7.1875vw 60px 7.1875vw;
+
+    @media screen and (max-width: 810px) {
+        width: calc(100% - 38px);
+        padding: 30px 19px 30px 19px;
+    }
 }

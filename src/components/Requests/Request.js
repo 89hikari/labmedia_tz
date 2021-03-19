@@ -10,7 +10,7 @@ function Request(props) {
             <div className="requests__info__elements__element">{props.position}</div>
             <div className="requests__info__elements__element">{props.date}</div>
             <div className="requests__info__elements__element">{props.program}</div>
-            <div className="requests__info__elements__element">{props.cost}</div>
+            <div className="requests__info__elements__element">{props.cost} руб.</div>
             <div className="requests__info__elements__element">{props.status}</div>
         </div>
     )

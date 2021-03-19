@@ -2,6 +2,7 @@
     width: calc(100% - 76px);
     max-width: 1844px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding-left: 38px;
@@ -10,15 +11,37 @@
     color: #fff;
     background-color: #fff;
     border-bottom: 2px solid #f2f2f2;
+    position: relative;
+    &__list{
+        position: absolute;
+        left: 12px;
+        margin: 0;
+        padding: 0;
+        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        &__line{
+            background-color: #000;
+            height: 1px;
+            width: 21px;
+        }
+    }
+    &__list:hover{
+        cursor: pointer;
+    }
     &--logo{
         background-color: #fff;
         position: relative;
-        min-width: 213px;
+        display: inline;
+        white-space: nowrap;
         padding-left: 40px;
         font-family: 'MyriadProRegular';
         font-weight: 800;
         font-size: 12px;
         color: #fd5520;
+        margin-right: 3.125vw;
     }
     &--logo::before {
         position: absolute;
@@ -32,6 +55,9 @@
         height: 31px;
         width: 31px;
     }
+    &--logo:hover{
+        cursor: pointer;
+    }
     &--nav{
         background-color: #fff;
         padding: 0;
@@ -40,7 +66,7 @@
             background-color: #fff;
             float: left;
             font-family: "CircleBold";
-            font-weight: 800;
+            font-weight: bold;
             list-style: none;
             text-align: center;
             font-size: 12px;
@@ -52,18 +78,25 @@
             cursor: pointer;
         }
     }
+    @media screen and (max-width: 810px) {
+        &--nav{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 810px) {
+        &__list{
+            display: none;
+        }
+    }
+
     &--tools{
         padding: 0;
         margin: 0;
-        margin-left: auto;
-        min-width: 227px;
-        height: 53px;
+        height: 45px;
         display: flex;
-        justify-content: space-between;
-        text-align: right;
-        position: relative;
         background-color: #fff;
-        &__counter{
+        &__counter1{
             position: absolute;
             right: -15px;
             top: -22px;
@@ -75,8 +108,95 @@
             height: 19px;
             background-color: #fd5520;
         }
+        &__counter2{
+            position: absolute;
+            background-color: transparent;
+            color: black;
+            font-family: 'DINProRegular';
+            font-weight: unset;
+            font-size: 10px;
+            top: -20px;
+            right: 50%;
+            left: calc(50% - 8px);
+        }
+        @media screen and (max-width: 810px) {
+            &__search, &__profile {
+              display: none;
+            }
+        }
+
+        &__blob, &__notifications{
+            &__container{
+                background-color: #fff;
+                position: relative;
+            }
+        }
     }
+
+    &--tools > * {
+        margin-right: 20px;
+    }
+
+    &--tools__notifications__container {
+        margin-right: 0;
+    }
+    
     img {
         background-color: #fff;
     }
+    img:hover{
+        cursor: pointer;
+    }
+
+    &__drop{
+        position: absolute;
+        background-color: rgb(245, 245, 245);
+        padding: 5px 65px 10px 5px;
+        margin-top: 55px;
+        z-index: 1;
+        width: 90px;
+        border-radius: 4px;
+        &--element{
+            background-color: rgb(245, 245, 245);
+            color: #000;
+            float: left;
+            font-family: "CircleBold";
+            font-weight: bold;
+            list-style: none;
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            border-bottom: 1px solid #a3a3a3;
+        }
+    }
+
+    @media screen and (min-width: 810px) {
+        &__drop {
+          display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+   .header{
+    justify-content: unset;
+    height: 73px;
+    width: calc(100% - 53px);
+    padding-right: 15px;
+    &--tools{
+        margin-left: auto;
+        height: 25px;
+        &__blob, &__notifications{
+            &__container{
+                img{
+                    height: 25px;
+                }
+            }
+        }
+        &__counter1{
+            background-color: transparent;
+            color: #fd5520;
+        }
+    }
+   }
 }

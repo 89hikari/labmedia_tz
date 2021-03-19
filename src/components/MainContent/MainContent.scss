@@ -129,9 +129,13 @@
 
 .main{
     background-color: #fff;
+    padding-bottom: 88px;
     &__sections{
         background-color: #fff;
         margin-bottom: 45px;
+        @media screen and (max-width: 810px) {
+            margin-bottom: 20px;
+        }
         &--element{
             white-space: nowrap;
             position: relative;
@@ -162,6 +166,11 @@
         font-size: 52px;
         max-width: 500px;
         margin-bottom: 45px;
+        @media screen and (max-width: 810px) {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 25px;
+        }
     }
     &__content{
         display: flex;
@@ -181,6 +190,10 @@
                 font-size: 24px;
                 line-height: 36px;
                 margin-bottom: 1em;
+                @media screen and (max-width: 810px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
             }
         }
         &--slider{
@@ -206,6 +219,7 @@
             background-color: #ececec;
             color: #666666;
             padding: 11px;
+            padding-top: 9px;
             margin-top: 7px;
             margin-right: 7px;
             border-radius: 4px;
@@ -214,6 +228,9 @@
             font-size: 12px;
             text-align: center;
             transition: 0.3s;
+            @media screen and (max-width: 810px) {
+                    
+                }
         }
         &--element:hover{
             color: #fd5520;
@@ -243,6 +260,12 @@
                 border-bottom: 1px solid #c2c2c2;
                 margin-right: 20px;
                 margin-top: 10px;
+                @media screen and (max-width: 810px) {
+                    border: none;
+                    text-decoration: underline;
+                    text-decoration-style: solid;
+                    text-decoration-color: #c2c2c2;
+                }
             }
             &--element:hover {
                 cursor: pointer;

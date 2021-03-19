@@ -12,6 +12,28 @@ export const obj = [
     },
     {
       id: 1,
+      title: "Лаборатория мультимедиа",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик сменная должность",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями Организация и управление инженерными изысканиями",
+      cost: 200,
+      status: "Согласование линейным руководителем"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
+    },
+    {
+      id: 1,
       title: "Graham Terra",
       func: "Do veniam tempor sunt sit tempor elit.",
       initiator: "Carey Atkins Kim",
@@ -20,6 +42,61 @@ export const obj = [
       program: "Jannie Marva Lyons Nicholson",
       cost: 926,
       status: "Alison Phelps"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
+    },
+    {
+      id: 1,
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
     },
     {
       id: 1,
@@ -45,14 +122,14 @@ export const obj = [
     },
     {
       id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
     },
     {
       id: 1,
@@ -67,102 +144,25 @@ export const obj = [
     },
     {
       id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
     },
     {
       id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
-    },
-    {
-      id: 1,
-      title: "Graham Terra",
-      func: "Do veniam tempor sunt sit tempor elit.",
-      initiator: "Carey Atkins Kim",
-      position: "Wilkins Rodgers",
-      date: "Mon Oct 23 1989 09:44:54 GMT+0300 (GMT+03:00)",
-      program: "Jannie Marva Lyons Nicholson",
-      cost: 926,
-      status: "Alison Phelps"
+      title: "Лаборатория",
+      func: "Современные технологии добычи нефти",
+      initiator: "Рыжкова Елена Александровна",
+      position: "Аналитик",
+      date: "12.04.2017",
+      program: "Организация и управление инженерными изысканиями",
+      cost: 700,
+      status: "Согласование"
     },
     {
       id: 1,
