@@ -72,6 +72,9 @@
             @media screen and (max-width: 810px) {
                 padding-left: 19px;
             }
+            @media screen and (min-width: 1921px) {
+                padding-left: 138px
+            }
             &__title{
                 width: 8.203125vw;
                 padding-right: 0.52vw;
@@ -84,6 +87,10 @@
                 background-color: #fff;
                 padding-bottom: 8px;
                 border-bottom: 1px solid #cccccc;
+                @media screen and (min-width: 1921px) {
+                    width: 157.5px;
+                    padding-right: 10px;
+                }
             }
         }
         &__elements{
@@ -92,6 +99,9 @@
             padding-left: 7.1875vw;
             @media screen and (max-width: 810px) {
                 padding-left: 19px;
+            }
+            @media screen and (min-width: 1921px) {
+                padding-left: 138px
             }
             &__element{
                 width: 8.203125vw;
@@ -105,13 +115,17 @@
                 font-size: 12px;
                 background-color: #fff;
                 text-align: left;
+                @media screen and (min-width: 1921px) {
+                    width: 157.5px;
+                    padding-right: 10px;
+                }
             }
         }
         &__elements:hover{
-            background-color: rgb(245, 224, 224);
+            background-color: #ffeee8;
         }
         &__elements:hover &__elements__element{
-            background-color: rgb(245, 224, 224);
+            background-color: #ffeee8;
         }
         &__container{
             background-color: #fff;

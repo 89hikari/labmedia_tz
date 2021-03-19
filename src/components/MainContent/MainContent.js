@@ -3,24 +3,15 @@ import './MainContent.scss'
 import Description from './Description'
 import ImageGallery from 'react-image-gallery';
 import { FormOutlined } from '@ant-design/icons'
+import vr_man from './../../assets/vr_man.jpg';
+import SliderComponent from './SliderComponent';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function MainContent(props) {
+
     const classNames = require('classnames');
-    const images = [
-        {
-          original: props.vrMan,
-          description: 'Из курса вы узнаете о возможностях раздела "Обучение  и развитие", о том, что поможет в развитии собственных компетенций и о дополнительных возможностях в рамках обучения на портале.',
-          media : '(width: 606px)'
-        },
-        {
-          original: 'https://lh3.googleusercontent.com/proxy/FHfOGDXqgX3zK5Jx2oox-QNwDJwxVWpoVtO6bq_M3cToJdwgyJ8AInvkC_MOtLOTdNR5x3b_RelJRSjkU460LekNL8AmtQKyl8Qp5vGDFME_rVaY9cMIy0UW5BGHp1ZQdPLcZisbnA',
-          media : '(width: 606px;)',
-        },
-        {
-          original: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg',
-          media : '(width: 606px)',
-        },
-      ];
+
     return (
         <div className="main">
             <div className="main__sections">
@@ -34,12 +25,18 @@ function MainContent(props) {
                     <Description text={"Отступ абзаца равен пустой строке. Положения кодекса обязательны для исполнения работниками компании (в том числе всеми членами Правления)."} />
                 </div>
                 <div className="main__content--slider">
-                    <ImageGallery items={images} 
-                                showPlayButton={false} 
-                                showGalleryFullscreenButton={false} 
-                                showFullscreenButton={false}
-                                showBullets={true}
-                                /></div>
+                    <Carousel>
+                    <SliderComponent title="Применение технологий искусственного интеллекта в нефтегазовой области"
+                                            description="Вы узнаете, что такое машинное обучение, как применить его в работе и где учиться, чтобы начать заниматься такими проектами"
+                                            img={vr_man}/>
+                    <SliderComponent title="Применение технологий искусственного интеллекта в нефтегазовой области"
+                                            description="Вы узнаете, что такое машинное обучение, как применить его в работе и где учиться, чтобы начать заниматься такими проектами"
+                                            img={vr_man}/>
+                    <SliderComponent title="Применение технологий искусственного интеллекта в нефтегазовой области"
+                                            description="Вы узнаете, что такое машинное обучение, как применить его в работе и где учиться, чтобы начать заниматься такими проектами"
+                                            img={vr_man}/>
+                    </Carousel>
+                </div>
             </div>
             <div className="main__tags">
                 <span className="main__tags--element">Машинное обучение</span>

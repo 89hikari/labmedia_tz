@@ -1,131 +1,4 @@
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
-.image-gallery {
-    max-width: 606px !important;
-    max-height: 300px !important;
-    background-color: transparent !important;
-}
-
-.image-gallery-image {
-    position: relative !important;
-    max-width: 606px !important;
-    max-height: 300px !important;
-    background-color: transparent !important;
-}
-
-.image-gallery-right-nav .image-gallery-left-nav{
-    max-width: 45px !important;
-    max-height: 45px !important;
-    opacity: 0.5 !important;
-}
-
-.image-gallery-icon.image-gallery-left-nav {
-    padding: 0 !important;
-    width: 45px !important;
-    height: 45px !important;
-    opacity: 0.5;
-    margin-left: 15px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-}
-
-.image-gallery-icon.image-gallery-right-nav {
-    padding: 0 !important;
-    width: 45px !important;
-    height: 45px !important;
-    opacity: 0.5;
-    margin-right: 15px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50%;
-}
-
-.image-gallery-icon.image-gallery-right-nav:hover{
-    opacity: 1 !important;
-}
-
-.image-gallery-icon.image-gallery-left-nav:hover{
-    opacity: 1 !important;
-}
-
-.image-gallery-right-nav::before {
-    content: '';
-    display: block !important;
-    border-top: 2px solid #ffffff !important;
-    border-right: 2px solid #ffffff !important;
-    transform: rotate(45deg) !important;
-    color: #fff !important;
-    width: 10px !important;
-    height: 10px !important;
-    margin: 15px 8px 6px 14px;
-    opacity: 1 !important;
-    box-shadow: none !important;
-}
-
-.image-gallery-left-nav::before {
-    content: '';
-    display: block !important;
-    border-top: 2px solid #ffffff !important;
-    border-right: 2px solid #ffffff !important;
-    transform: rotate(-135deg) !important;
-    box-shadow: transparent !important;
-    color: #fff !important;
-    width: 10px !important;
-    height: 10px !important;
-    margin: 15px 0 6px 18px;
-    opacity: 1 !important;
-    box-shadow: none !important;
-}
-
-.image-gallery-bullet.active {
-    position: relative !important;
-    background-color: transparent !important;
-}
-
-.image-gallery-bullet.active::before {
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-}
-
-.image-gallery-bullets {
-    background-color: transparent !important;
-}
-
-.image-gallery-bullets-container{
-    background-color: transparent !important;
-}
-
-.image-gallery-svg{
-    opacity: 0 !important;
-    width: 45px !important;
-    height: 45px !important;
-    padding-right: 10px !important;
-}
-
-.image-gallery-thumbnails-wrapper {
-    display: none !important;
-}
-
-.image-gallery-description {
-    background: transparent !important;
-    font-family: 'DINProRegular' !important;
-    font-size: 18px;
-    max-width: 70% !important;
-    text-align: left !important;
-    padding: 0 !important;
-    position: absolute;
-    top: 60% !important;
-    left: 50% !important;
-    margin-right: -50% !important;
-    transform: translate(-50%, -50%) !important;
-}
 
 .main{
     background-color: #fff;
@@ -198,15 +71,62 @@
         }
         &--slider{
             position: relative;
-            max-width: 606px;
-            max-height: 300px;
+            width: 606px;
+            height: 300px;
             margin-left: auto;
-            display:inline-block;
             margin: 0;
             padding: 0;
-            margin-bottom: 1em;
+            background-color: transparent;
+            &__container{
+                position: relative;
+                color: white;
+                margin: 0 auto;
+                height: 300px;
+                overflow: hidden;
+                &__title{
+                    display: inline-block;
+                    max-width: 310px;
+                    position: absolute;
+                    background-color: transparent;
+                    font-family: 'DINProBold';
+                    font-weight: bold;
+                    text-align: left !important;
+                    font-size: 24px;
+                    margin-left: 85px;
+                    margin-top: 45px;
+                }
+                &__description{
+                    position: absolute;
+                    background-color: transparent;
+                    font-family: 'DINProRegular';
+                    font-weight: normal;
+                    text-align: left !important;
+                    font-size: 18px;
+                    margin-left: 85px;
+                    max-width: 65%;
+                    margin-top: 150px;
+                }
+                img{
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
         }
     }
+
+    .carousel-root{
+        height: 300px;
+    }
+    .carousel-slider{
+        height: 300px;
+    }
+    .slider-wrapper{
+        height: 300px;
+    }
+    .slide{
+        height: 300px;
+    }
+    
     &__tags {
         background-color: #fff;
         padding: 0;

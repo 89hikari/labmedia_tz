@@ -15,11 +15,11 @@ class Header extends React.Component {
         this.handleClick = this.handleClick.bind(this);
       }
     
-      handleClick() {
+    handleClick() {
         this.setState(state => ({
-          isToggleOn: !state.isToggleOn
+            isToggleOn: !state.isToggleOn
         }));
-      }
+    }
 
     render() {
         return (

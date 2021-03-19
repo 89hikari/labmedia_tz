@@ -16,6 +16,9 @@
         font-family: 'DINProRegular';
         font-weight: normal;
         padding: 0 7.1875vw 0 7.1875vw;
+        @media screen and (min-width: 1921px) {
+            padding: 0 138px 0 138px;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -55,13 +58,16 @@
         font-weight: normal;
         font-size: 12px;
         color: #666666;
-        padding: 80px 0 10px 4.17vw;
+        padding: 80px 0 10px 7.1875vw;
         @media screen and (max-width: 810px) {
             padding: 0;
             position: absolute;
             top: 50%;
             margin-top: -0.625em;
             left: 20px;
+        }
+        @media screen and (min-width: 1921px) {
+            padding-right: 138px;
         }
     }
 }

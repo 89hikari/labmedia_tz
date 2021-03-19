@@ -34,13 +34,20 @@
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
+    "framework7-react": "^6.0.12",
+    "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.6.0",
+    "mdbreact": "^5.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-bootstrap-pagination": "^1.0.7",
     "react-dom": "^17.0.1",
+    "react-id-swiper": "^4.0.0",
     "react-image-gallery": "^1.0.9",
     "react-paginate": "^7.1.0",
+    "react-responsive-carousel": "^3.2.15",
+    "react-slick": "^0.28.1",
+    "swiper": "^6.5.0",
     "url-loader": "^4.1.1"
   }
 }
