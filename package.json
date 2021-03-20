@@ -37,8 +37,9 @@
     "framework7-react": "^6.0.12",
     "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.6.0",
-    "mdbreact": "^5.0.1",
+    "mdbreact": "^4.6.1",
     "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
     "react-bootstrap": "^1.5.2",
     "react-bootstrap-pagination": "^1.0.7",
     "react-dom": "^17.0.1",
@@ -49,5 +50,18 @@
     "react-slick": "^0.28.1",
     "swiper": "^6.5.0",
     "url-loader": "^4.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
   }
 }

@@ -38,7 +38,6 @@
         white-space: nowrap;
         padding-left: 40px;
         font-family: 'MyriadProRegular';
-        font-weight: 800;
         font-size: 12px;
         color: #fd5520;
         margin-right: 3.125vw;
@@ -51,9 +50,12 @@
         bottom: 0;
         transform: translate(-50%, -50%);
         background: #fd5520;
-        clip-path: circle(50%);
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
         height: 31px;
         width: 31px;
+        
     }
     &--logo:hover{
         cursor: pointer;
@@ -66,7 +68,6 @@
             background-color: #fff;
             float: left;
             font-family: "CircleBold";
-            font-weight: bold;
             list-style: none;
             text-align: center;
             font-size: 12px;
@@ -109,12 +110,14 @@
             height: 18px;
             background-color: #fd5520;
         }
+        img{
+            height: 45px;
+        }
         &__counter2{
             position: absolute;
             background-color: transparent;
             color: black;
             font-family: 'DINProRegular';
-            font-weight: unset;
             font-size: 10px;
             top: -20px;
             right: 50%;
@@ -162,7 +165,6 @@
             color: #000;
             text-align: left !important;
             font-family: "CircleBold";
-            font-weight: bold;
             list-style: none;
             text-align: center;
             font-size: 12px;

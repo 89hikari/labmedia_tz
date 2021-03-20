@@ -7,7 +7,7 @@
 @font-face {
     font-family: "MyriadProRegular";
 	src: url("../fonts/MyriadProRegular.eot");
-	src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
 	url("../fonts/MyriadProRegular.woff") format("woff"),
 	url("../fonts/MyriadProRegular.ttf") format("truetype");
 	font-style: normal;
@@ -17,24 +17,39 @@
 @font-face {
     font-family: "MyriadProBold";
     src: url("../fonts/MyriadProBold.eot");
-    src: url("../fonts/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/MyriadProBold.woff") format("woff"),
     url("../fonts/MyriadProBold.ttf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+	font-weight: normal;
 }
 
 @font-face {
     font-family: "CircleBold";
-    src: url("../fonts/CircleBold.ttf") format("truetype");
+    src: url("../fonts/CircleBold.eot");
+    src: url('../fonts/CircleBold.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/CircleBold.ttf") format("truetype"),
+    url("../fonts/Circe-Bold.woff") format("woff");
+    font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
     font-family: "DINProBold";
-    src: url("../fonts/DINProBold.ttf") format("truetype");
+    src: url("../fonts/DINProBold.eot");
+    src: url('../fonts/DINProBold.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/DINProBold.ttf") format("truetype"),
+    url("../fonts/DINPro-Bold.woff") format("woff");
+    font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
     font-family: "DINProRegular";
-    src: url("../fonts/DINProRegular.ttf") format("truetype");
+    src: url("../fonts/DINProRegular.eot");
+    src: url('../fonts/DINProRegular.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/DINProRegular.ttf") format("truetype"),
+    url("../fonts/DINPro.woff") format("woff");
+    font-style: normal;
+	font-weight: normal;
 }

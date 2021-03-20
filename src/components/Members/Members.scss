@@ -5,7 +5,6 @@
         background-color: #fff;
         font-family: "DINProRegular";
         font-size: 40px;
-        font-weight: normal;
         margin-bottom: 50px;
         @media screen and (max-width: 810px) {
             font-family: 'DINProBold';
@@ -30,7 +29,6 @@
             border-bottom: 1px solid #fd5520;
             font-family: "DINProRegular";
             font-size: 14px;
-            font-weight: normal;
             @media screen and (max-width: 810px) {
                 border-bottom: none;
                 text-decoration: underline;
@@ -80,7 +78,6 @@
                     line-height: 75px;
                     color: #999999;
                     font-family: "DINProBold";
-                    font-weight: bold;
                     font-size: 12px;
                     text-align: center;
                     border: 1px solid #cdcdcd;
@@ -106,7 +103,6 @@
                     font-size: 14px;
                     line-height: 19px;
                     font-family: "DINProBold";
-                    font-weight: bold;
                     &__container{
                         background-color: #fff;
                         margin-bottom: 10px;
@@ -117,7 +113,6 @@
                     background-color: #fff;
                     font-size: 12px;
                     font-family: "DINProRegular";
-                    font-weight: normal;
                     color: #666666;
                 }
                 &__role{
@@ -138,7 +133,6 @@
                     border-bottom: 1px solid #feaa8f;
                     font-size: 12px;
                     font-family: "DINProRegular";
-                    font-weight: normal;
                     cursor: pointer;
                 }
                 &__action{
@@ -147,7 +141,6 @@
                     padding: 9px 21px 9px 21px;
                     color: #fd5520;
                     background-color: #fff;
-                    font-weight: normal;
                     border: 1px solid #feaa8f;
                     border-radius: 21px;
                     transition: .2s;
@@ -169,13 +162,12 @@
         display: flex;
         flex-direction: column;
         &--become{
-            max-width: 143px;
+            max-width: 145px;
             font-family: "DINProRegular";
             font-size: 18px;
             padding: 15px 39px 15px 39px;
             color: #fff;
             background-color: #fd5520;
-            font-weight: normal;
             border-radius: 39px;
             transition: .2s;
         }
@@ -192,7 +184,6 @@
             text-align: center;
             color: #fd5520;
             background-color: #fff;
-            font-weight: normal;
             border: 1px solid #feaa8f;
             border-radius: 39px;
             transition: .2s;
