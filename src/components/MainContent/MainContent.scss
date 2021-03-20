@@ -84,8 +84,13 @@
                 height: 300px;
                 overflow: hidden;
                 &__title{
-                    display: inline-block;
                     max-width: 310px;
+                    text-decoration: underline;
+                    text-decoration-color: #a7a7a7;
+                    -webkit-text-underline-position: under;
+                    -ms-text-underline-position: below;
+                    text-underline-position: under;
+                    text-decoration-thickness: 1px;
                     position: absolute;
                     background-color: transparent;
                     font-family: 'DINProBold';
@@ -94,6 +99,11 @@
                     font-size: 24px;
                     margin-left: 85px;
                     margin-top: 45px;
+                    @media screen and (max-width: 810px) {
+                        margin-left: 20px;
+                        margin-top: 30px;
+                        font-size: 18px;
+                    }
                 }
                 &__description{
                     position: absolute;
@@ -105,6 +115,13 @@
                     margin-left: 85px;
                     max-width: 65%;
                     margin-top: 150px;
+                    @media screen and (max-width: 810px) {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        margin-top: 116px;
+                        font-size: 14px;
+                        max-width: 90%;
+                    }
                 }
                 img{
                     height: 300px;
@@ -114,18 +131,120 @@
         }
     }
 
+    /////// Slider override ///////
+
     .carousel-root{
         height: 300px;
     }
+
     .carousel-slider{
         height: 300px;
     }
+
+    .dot {
+        position: relative;
+        background-color: transparent !important;
+    }
+
+    .dot.selected::before
+    {
+        position: absolute;
+        content: "";
+        width: 9px;
+        height: 9px;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .dot::after
+    {
+        position: absolute;
+        content: "";
+        width: 13px;
+        height: 13px;
+        top: -3px;
+        right: -3px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+
     .slider-wrapper{
         height: 300px;
     }
     .slide{
         height: 300px;
     }
+    .control-dots{
+        background: transparent;
+    }
+    .carousel-status{
+        display: none;
+    }
+    .control-next{
+        padding: 0 !important;
+        width: 45px;
+        height: 45px;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        border: 1px solid #c7c7c7 !important;
+        border-radius: 50%;
+        margin-right: 17px;
+        position: relative;
+        @media screen and (max-width: 810px) {
+            display: none;
+        }
+    }
+
+    .control-prev::before, .control-next::before{
+        display: none !important;
+    }
+
+    .control-prev:hover, .control-next:hover{
+        background-color: transparent !important;
+    }
+
+    .control-prev::after{
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 18px;
+        width: 12px;
+        height: 12px;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        transform: rotate(-135deg);
+    }
+
+    .control-next::after{
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 12px;
+        width: 12px;
+        height: 12px;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        transform: rotate(45deg);
+    }
+
+    .control-prev{
+        padding: 0 !important;
+        width: 45px;
+        height: 45px;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        border: 1px solid #c7c7c7 !important;
+        border-radius: 50%;
+        margin-left: 17px;
+        position: relative;
+        @media screen and (max-width: 810px) {
+            display: none;
+        }
+    }
+
+    ////////////////////////////
     
     &__tags {
         background-color: #fff;

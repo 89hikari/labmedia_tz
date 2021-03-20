@@ -9,37 +9,36 @@ module.exports = {
   },
   module: {
     rules: [
-        {
-            test: /\.(eot|svg|ttf|woff|woff2)$/,
-            use: [
-                     {
-                         loader: 'file-loader?name=./src/fonts/[name].[ext]'
-                     }
-                 ]
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+          use: [
+            {
+              loader: 'file-loader?name=./src/fonts/[name].[ext]'
+            }
+          ]
         },
-       
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"]
-      },
-      {
-        test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: ["babel-loader"]
+        },
+        {
+          test: /\.(scss|css)$/,
+          use: ['style-loader', 'css-loader', 'sass-loader']
+        }
+      ]
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: "./src/index.html"
+      })
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    })
-  ]
 };
